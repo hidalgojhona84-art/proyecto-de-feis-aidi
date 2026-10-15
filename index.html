@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FaceID | Reconocimiento Facial</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-100 text-slate-800">
+<header class="topbar">
+<div class="wrap nav">
+<a class="brand" href="#inicio"><img src="img/logo-faceid.svg" alt="FaceID"><span>FaceID</span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+<nav id="navLinks"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a><a class="nav-button" href="#demo">Iniciar Sesión</a></nav>
+</div>
+</header>
+<main>
+<section class="hero wrap" id="inicio">
+<div class="hero-copy">
+<p class="eyebrow">TECNOLOGÍA · SEGURIDAD · INNOVACIÓN</p>
+<h1>Reconocimiento<br>Facial</h1>
+<p class="lead">Tecnología que identifica rostros de forma rápida, segura y precisa.</p>
+<a class="primary-button" href="#servicios">Conoce más</a>
+</div>
+<div class="hero-photo">
+<img src="img/rostro-reconocimiento.jpg" alt="Ilustración de reconocimiento facial">
+<span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+<span class="scan-line"></span>
+</div>
+</section>
+<section class="wrap feature-grid" id="servicios">
+<article class="feature">
+<div class="icon-box"><img src="img/icon-huella.svg" alt=""></div>
+<div><h2>Detección Facial</h2><p>Identifica rostros en tiempo real con alta precisión.</p><a href="#demo">Ver más →</a></div>
+</article>
+<article class="feature">
+<div class="icon-box"><img src="img/icon-seguridad.svg" alt=""></div>
+<div><h2>Seguridad Inteligente</h2><p>Protege tu información con tecnología avanzada.</p><a href="#demo">Ver más →</a></div>
+</article>
+</section>
+<section class="wrap demo" id="demo">
+<div class="demo-copy"><p class="eyebrow">FACEID DEMO</p><h2>Tu seguridad, en una nueva dimensión.</h2><p>Explora una experiencia visual moderna de reconocimiento facial. Esta demostración es una maqueta educativa: no activa la cámara ni identifica personas.</p><a class="primary-button" href="#contacto">Conoce más</a></div>
+<div class="tech-card"><img src="img/icon-rapidez.svg" alt=""><h3>Reconocimiento inteligente</h3><p>Rapidez, precisión y privacidad en una sola experiencia.</p></div>
+</section>
+</main>
+<footer id="contacto"><div class="wrap footer-inner"><a class="brand footer-brand" href="#inicio"><img src="img/logo-faceid.svg" alt=""><span>FaceID</span></a><p>Servicios · Seguridad · Contacto</p><p>© 2026 FaceID. Todos los derechos reservados.</p></div></footer>
+<script>
+const toggle=document.getElementById('menuToggle'), nav=document.getElementById('navLinks');
+toggle.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>
